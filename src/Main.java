@@ -12,6 +12,9 @@ public class Main {
         if (x > tranche) {
 
             int total = tranche + invoice;
+            System.out.println("total = ");
+            System.out.println(total);
+            
         } else {
             int bonus = tranche / 100;
 
