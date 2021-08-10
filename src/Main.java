@@ -5,32 +5,24 @@ public class Main {
         // параметров программы: начального счёта,
         // суммы пополнения и тп
         int invoice = 100;
-        int tranche = 1150;
+        int tranche = 150;
         int x = 1000;
-
+        int total;
+        int bonus;
 //boolean trancheReal = true;
         if (x > tranche) {
-
-            int total = tranche + invoice;
-            System.out.println("total = ");
-            System.out.println(total);
-            
-        } else {
-            int bonus = tranche / 100;
-
-
-            int total = bonus + tranche + invoice;
-            // Условным оператором проверяете превысила ли
-            // сумма пополнения порог и для этих двух разных
-            // сценариев рассчитываете сумму бонуса и выводите
-            // на экран.
-            System.out.println("bonus = ");
-            System.out.println(bonus);
-            System.out.println("_______________________________");
-            System.out.println("total = ");
-            System.out.println(total);
+            bonus = 0;
+            //int total;
+            //System.out.println("total = ");
+            //System.out.println(total);
+        } else
+            bonus = tranche / 100;
+        total = bonus + invoice + tranche;
+        System.out.println("bonus = ");
+        System.out.println(bonus);
+        System.out.println("_______________________________");
+        System.out.println("total = ");
+        System.out.println(total);
 
     }
-
-}
 }
